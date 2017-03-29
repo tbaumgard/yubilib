@@ -1,0 +1,16 @@
+{
+    "name": "tbaumgard/yubilib",
+    "description": "YubiKey one-time password (OTP) validation, YubiKey emulator, and format validation",
+    "homepage": "https://github.com/tbaumgard/yubilib",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.6.0",
+        "ext-openssl": "*",
+        "ext-curl": "*",
+        "paragonie/constant_time_encoding": "^1|^2"
+    },
+    "autoload": {
+        "psr-4": { "yubilib\\": "" },
+        "files": [ "yubilib.php" ]
+    }
+}
