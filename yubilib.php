@@ -620,7 +620,7 @@ function calculateCrc16($binaryString) {
 	$length = \strlen($binaryString);
 
 	for ($i = 0; $i < $length; $i++) {
-		$integer = \unpack("C", $binaryString{$i});
+		$integer = \unpack("C", $binaryString[$i]);
 		$integer = $integer[1];
 
 		$crc ^= $integer & 0xff;
